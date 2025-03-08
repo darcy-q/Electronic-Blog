@@ -5,15 +5,46 @@
  */
 
 :root {
-	--accent: #2337ff;
+		/* Color Theme Swatches in Hex */
+	/* Retro-futuristic-synthwave-wireframe-background-3d-rendering-of-1980s-1-hex { color: #400D2E; }
+	.Retro-futuristic-synthwave-wireframe-background-3d-rendering-of-1980s-2-hex { color: #BF3FAA; }
+	.Retro-futuristic-synthwave-wireframe-background-3d-rendering-of-1980s-3-hex { color: #8C4688; }
+	.Retro-futuristic-synthwave-wireframe-background-3d-rendering-of-1980s-4-hex { color: #B259D9; }
+	.Retro-futuristic-synthwave-wireframe-background-3d-rendering-of-1980s-5-hex { color: #3A2073; } */
+
+
+	/* Color Theme Swatches in RGBA */
+	/* .Retro-futuristic-synthwave-wireframe-background-3d-rendering-of-1980s-1-rgba { color: rgba(63, 12, 45, 1); }
+	.Retro-futuristic-synthwave-wireframe-background-3d-rendering-of-1980s-2-rgba { color: rgba(191, 63, 169, 1); }
+	.Retro-futuristic-synthwave-wireframe-background-3d-rendering-of-1980s-3-rgba { color: rgba(140, 70, 135, 1); }
+	.Retro-futuristic-synthwave-wireframe-background-3d-rendering-of-1980s-4-rgba { color: rgba(178, 88, 216, 1); }
+	.Retro-futuristic-synthwave-wireframe-background-3d-rendering-of-1980s-5-rgba { color: rgba(58, 32, 114, 1); } */
+
+
+	--color_1: #400D2E;
+	--color_2: #BF3FAA;
+	--color_3: #8C4688;
+	--color_4: #B259D9;
+	--color_5: #3A2073;
+
+	--color1: 63, 12, 45;
+	--color2: 140, 70, 135;
+	--color3: 140, 70, 135;
+	--color4: 178, 88, 216;
+	--color5: 58, 32, 114;
+	--color6: 211, 162, 232;
+
+
+	--accent: #8C4688;
 	--accent-dark: #000d8a;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
 	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
-	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
+	--gray-gradient: rgba(var(--color6), 50%), #fff;
+	--gray-gradient1: rgba(var(--color5), 40%), #fff;
+	--box-shadow: 0 2px 6px rgba(var(--color2), 25%), 0 8px 24px rgba(var(--color2), 33%),
+		0 16px 32px rgba(var(--color2), 33%);
 }
 @font-face {
 	font-family: 'Atkinson';
@@ -34,7 +65,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
+	background-color: rgba(var(--color6), 20%);
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
@@ -59,7 +90,7 @@ h6 {
 	line-height: 1.2;
 }
 h1 {
-	font-size: 3.052em;
+	font-size: 2.5em;
 }
 h2 {
 	font-size: 2.441em;
